@@ -10,7 +10,7 @@
         const token = btoa(username + ":" + password);
         document.getElementById("loading").style.display = "block";
         fetch(
-            "http://165.227.130.2:8000/asset/delete",
+            "http://198.211.109.211:8000/asset/delete",
             {
                 
                 method: "POST",
@@ -31,7 +31,7 @@
 </script>
 
 <div href={"/auth/assets/" + asset.id} id={asset.id} class="asset">
-    <img alt="" src={"http://165.227.130.2:8000/images/" + asset.path} />
+    <img alt="" src={"http://198.211.109.211:8000/images/" + asset.path} />
     <div class="input_cont">
         <div class="asset_param">Character:</div>
         <div>{asset.entity_name}</div>

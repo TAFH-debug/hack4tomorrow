@@ -4,7 +4,7 @@
     function del() {
         const token = btoa(data.username + ":" + data.password);
         document.getElementById("loading").display = "block";
-        fetch("http://165.227.130.2:8000/project/delete", {
+        fetch("http://198.211.109.211:8000/project/delete", {
             
             method: "POST",
             headers: {
@@ -24,7 +24,7 @@
     function generate_image() {
         const token = btoa(data.username + ":" + data.password);
         document.getElementById("loading").display = "block";
-        fetch("http://165.227.130.2:8000/project/generate_image/", {
+        fetch("http://198.211.109.211:8000/project/generate_image/", {
             
             method: "POST",
             headers: {
@@ -45,7 +45,7 @@
 </script>
 
 <div class="project" data-sveltekit-reload>
-    <img src={"http://165.227.130.2:8000/images/" + data.image} alt=""/>
+    <img src={"http://198.211.109.211:8000/images/" + data.image} alt=""/>
     <div>
         <div class="project_title">
             {data.project_name}

@@ -11,7 +11,7 @@
         const token = btoa(username + ":" + password);
         document.getElementById("loading").style.display = "block";
         fetch(
-            "http://165.227.130.2:8000/dialog/delete",
+            "http://198.211.109.211:8000/dialog/delete",
             {
                 
                 method: "POST",

@@ -5,7 +5,7 @@
         const token = btoa(data.username + ":" + data.password);
         document.getElementById("loading").style.display = "block";
         fetch(
-            "http://165.227.130.2:8000/dialog/generate/",
+            "http://198.211.109.211:8000/dialog/generate/",
             {
                 
                 method: "POST",

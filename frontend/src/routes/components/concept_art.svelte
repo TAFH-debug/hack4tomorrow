@@ -10,7 +10,7 @@
     function del() {
         const token = btoa(username + ":" + password);
         fetch(
-            "http://165.227.130.2:8000/concept_art/delete",
+            "http://198.211.109.211:8000/concept_art/delete",
             {
                 
                 method: "POST",
@@ -31,7 +31,7 @@
 </script>
 
 <div href={"/auth/concept_arts/" + concept_art.id} id={concept_art.id} class="concept_art">
-    <img alt="" src={"http://165.227.130.2:8000/images/" + concept_art.image} />
+    <img alt="" src={"http://198.211.109.211:8000/images/" + concept_art.image} />
     <div class="input_cont">
         <div class="concept_art_param">Entity:</div>
         <div>{entity_name}</div>

@@ -19,7 +19,7 @@
         const id = document.getElementById("popup_select").value;
         const desc = document.getElementById("popup_input").value;
         document.getElementById("loading").style.display = "block";
-        fetch("http://165.227.130.2:8000/asset/generate/", {
+        fetch("http://198.211.109.211:8000/asset/generate/", {
             
             method: "POST",
             headers: {

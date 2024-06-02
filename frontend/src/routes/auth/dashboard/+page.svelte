@@ -20,7 +20,7 @@
 
         const token = btoa(data.username + ":" + data.password);
         document.getElementById("loading").style.display = "block";
-        fetch("http://165.227.130.2:8000/project/generate_basic/", {
+        fetch("http://198.211.109.211:8000/project/generate_basic/", {
             method: "POST",
             headers: {
                 Authorization: `Basic ${token}`,

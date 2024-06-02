@@ -22,7 +22,7 @@
         const desc2 = document.getElementById("popup_input2").value;
 
         document.getElementById("loading").style.display = "block";
-        fetch("http://165.227.130.2:8000/dialog/create/", {
+        fetch("http://198.211.109.211:8000/dialog/create/", {
             
             method: "POST",
             headers: {
